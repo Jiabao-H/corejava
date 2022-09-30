@@ -2,9 +2,7 @@ package Homework1;
 
 import java.io.Serializable;
 
-/**
- * Problems: Define a “Employee” POJO class and make it serializable
- */
+
 public class Employee implements Serializable {
     // private static final long serialVersionUID = 1L;
     private String id;
