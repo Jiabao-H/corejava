@@ -1,22 +1,23 @@
 package Homework1;
 
 public final class finalTopics {
-    private final StringBuffer SB;
+    private final StringBuffer sb;
 
     private finalTopics() {
-        SB = new StringBuffer("Hello World");
+        sb = new StringBuffer("Hello World !!!");
     }
 
     private void getStringBuffer() {
-        System.out.println(SB);
+        System.out.println(sb);
     } 
 
     private void updateStringBuffer() {
-        SB.append(" Updated!");
+        sb.append(" Update!");
     }
 
     private final static void demo() {
         finalTopics obj = new finalTopics();
+        
         obj.getStringBuffer();
         obj.updateStringBuffer();
         obj.getStringBuffer();
