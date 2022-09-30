@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
 
  class stringTopics {
 
-    private static boolean ifSameStrings(String s1, String s2) {
+    public static boolean ifSameStrings(String s1, String s2) {
         int m = s1.length(), n = s2.length();
 
         if (m != n)
@@ -27,7 +27,7 @@ import java.util.StringTokenizer;
         return true;
     }
 
-    private static List<String> getToekn(String url) {
+    public static List<String> getToekn(String url) {
         int n = url.length();
         List<String> output = new ArrayList<>();
 
@@ -42,7 +42,7 @@ import java.util.StringTokenizer;
         return output;
     }
 
-    private static String combineStrings(List<String[]> list) {
+    public static String combineStrings(List<String[]> list) {
         int n = list.size();
         StringBuilder output = new StringBuilder();
 
