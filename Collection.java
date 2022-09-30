@@ -1,45 +1,35 @@
-package com.interview.coding.course;
-
-
 import java.util.*;
 import com.interview.coding.course.Homework_Serializable.*;
 
-public class Homework_Collection {
+public class Collection {
 
-    /**
-     * 1)	(Set)Find true friends: Given two arraylists containing friend names, find the true friends that appear in both list.
-     */
+    //Using (Set) Find true friends: Given two arraylists containing friend names, find the true friends that appear in both list.
+    
     public Set<String> trueFriends(List<String> friends1, List<String> friends2){
         Set<String> set = new HashSet<>();
-        Set<String> result = new HashSet<>();
+        Set<String> res = new HashSet<>();
 
         if(friends1 == null || friends2 == null){
             return null;
         }
 
-        for(String f: friends1){
-            set.add(f);
+        for(String f1: friends1){
+            set.add(f1);
         }
         for(String f2: friends2){
             if(set.contains(f2)){
-                result.add(f2);
+                res.add(f2);
             }
         }
-        return result;
+        return res;
     }
 
-    /**
-     * 2)(Map)Given a string, output duplicate characters and their counts
-     */
+    //Using (Map)Given a string, output duplicate characters and their counts
+    
     public void duplicateCounts(String str){
-        //if str == null
+
         Map<Character, Integer> map = new HashMap<>();
         for(char c : str.toCharArray()){
-            /*if(map.containsKey(c)){
-                map.put(c, map.get(c)+1);
-            }else{
-                map.put(c, 1);
-            }*/
             map.put(c, map.getOrDefault(c,0)+1);
         }
 
@@ -50,6 +40,7 @@ public class Homework_Collection {
     }
 
 
+    //create a new map to duplicate
     Map<Integer, String> employees = new HashMap<>();
 
     public void addEmployee(Employee employee){
