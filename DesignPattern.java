@@ -1,10 +1,9 @@
-package com.interview.coding.course;
+
 
 public class Homework_DesignPattern {
 
-    /**
-     * Singleton
-     */
+    // Pattern-Singleton
+  
     public static class AppleDesignerFactory{
         private static AppleDesignerFactory factory;
         private AppleDesignerFactory(){}
@@ -16,16 +15,15 @@ public class Homework_DesignPattern {
             return factory;
         }
 
+        //@override
         @Override
         protected Object clone() throws CloneNotSupportedException{
             throw new CloneNotSupportedException();
         }
     }
 
-    /**
-     * 2)	Create a factory pattern called “Currency” which takes in
-     * the country name and return the currency object for that country.
-     */
+   // Pattern-factory
+     
     public interface Currency {
         public Currency exchange();
     }
