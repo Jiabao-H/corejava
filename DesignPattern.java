@@ -1,5 +1,5 @@
 
-
+package Homework1;
 public class DesignPattern {
 
     // Pattern-Singleton
