@@ -1,6 +1,6 @@
 
 
-public class Homework_DesignPattern {
+public class DesignPattern {
 
     // Pattern-Singleton
   
